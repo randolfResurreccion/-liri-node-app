@@ -1,0 +1,22 @@
+{
+  "name": "-liri-node-app",
+  "version": "1.0.0",
+  "description": "node homework",
+  "main": "key.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randolfResurreccion/-liri-node-app.git"
+  },
+  "author": "Randolf Resurreccion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randolfResurreccion/-liri-node-app/issues"
+  },
+  "homepage": "https://github.com/randolfResurreccion/-liri-node-app#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
