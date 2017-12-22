@@ -1,0 +1,49 @@
+
+spotify-this-song mmmbop
+movie-this frozen
+movie-this frozen
+spotify-this-song all
+spotify-this-song cupid
+spotify-this-song overjoyed
+movie-this batmanundefined
+rounders
+coming
+america
+/usr/local/Cellar/node/8.9.1/bin/node,/Users/randolfresurreccion/Desktop/CODE/liri-node-app/liri.js,movie-this,coming,to,america
+movie-this coming to
+movie-this rounders undefined
+movie-this,rounders
+movie-this,coming,to,america
+spotify-this-song,slim,shady
+spotify-this-song
+movie-this,batman
+movie-this
+movie-this
+movie-this
+movie-this,titanic
+movie-this,frozen
+movie-this
+spotify-this-song,torn
+spotify-this-song
+do-what-it-says
+do-what-it-says
+do-what-it-says
+movie-this,james,bond
+movie-this
+movie-this,batman
+movie-this,dunkirk
+spotify-this-song
+spotify-this-song,mi,gente
+do-what-it-says
+do-what-it-says
+spotify-this-song,mi,gente
+spotify-this-song
+movie-this,batman
+movie-this
+my-tweets
+movie-this
+movie-this,batman
+spotify-this-song
+spotify-this-song,mi,gente
+do-what-it-says
+my-tweets
