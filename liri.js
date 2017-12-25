@@ -52,14 +52,21 @@ if (action === "do-what-it-says") {
   });
 }
 
-// ??????????????????????????????????
+
 if (action === "my-tweets") {
 
-  var params = { screen_name: 'nbcsnl' };
+  var params = { screen_name: 'barackobama'};
   client.get('statuses/user_timeline', params, function (error, tweets, response) {
     if (!error) {
-      console.log(JSON.stringify(tweets, null, 1));
+      
+      for (var i = 0; i < 10; i++ ) {
+        console.log(tweets[i].created_at);
+        console.log(tweets[i].text + "\n");
+        
+      }
     }
+    writeToFile(tweets[i].created_at);    
+    writeToFile(tweets[i].text + "\n");
   });
 }
 
@@ -78,6 +85,14 @@ function mySpotify(song) {
     console.log("Link: " + data.tracks.items[0].external_urls.spotify);
     console.log("Album: " + data.tracks.items[0].album.name);
     console.log("==========================================================================");
+    // log data to our txt file
+   
+    writeToFile("Artist: " + data.tracks.items[0].artists[0].name);
+    writeToFile("Song: " + data.tracks.items[0].name);
+    writeToFile("Link: " + data.tracks.items[0].external_urls.spotify);
+    writeToFile("Album: " + data.tracks.items[0].album.name);
+
+    
   });
 }
 
@@ -97,6 +112,18 @@ function myMovie(movie) {
       console.log("\nPlot of the movie: " + JSON.parse(body).Plot);
       console.log("\nActors in the movie: " + JSON.parse(body).Actors);
       console.log("=========================================================================");
+      writeToFile(body);
+    }
+  });
+}
+
+function writeToFile(data)  {
+  var objToString = JSON.stringify(data, null, 2);
+  fs.appendFile("log.txt", objToString, function(err){
+    if(err) {
+      return console.log(err);
+    } else {
+      // console.log("Wrote to file");
     }
   });
 }
